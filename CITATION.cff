@@ -10,8 +10,10 @@ authors:
     given-names: Taiki
     affiliation: "QIRI (Quantum Integrated Research Institute Inc.), Tokyo, Japan"
 version: 1.0.0
-date-released: 2026-07-16
+date-released: 2026-07-24
 license: MIT
+repository-code: "https://github.com/deeptell-inc/qnoise-pack"
+doi: 10.5281/zenodo.21532189
 preferred-citation:
   type: article
   title: "Magic, not scrambling, decides what you can learn: identifiability and extractability of metrological signals hidden by chaotic dynamics"

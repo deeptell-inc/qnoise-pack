@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the accompanying paper."
+title: "qnoise-metametrology: code and data for 'Magic, not scrambling, decides what you can learn'"
+authors:
+  - family-names: Wakaura
+    given-names: Hikaru
+    orcid: "https://orcid.org/0000-0001-8381-8323"
+    affiliation: "QIRI (Quantum Integrated Research Institute Inc.), Tokyo, Japan"
+  - family-names: Tanimae
+    given-names: Taiki
+    affiliation: "QIRI (Quantum Integrated Research Institute Inc.), Tokyo, Japan"
+version: 1.0.0
+date-released: 2026-07-16
+license: MIT
+preferred-citation:
+  type: article
+  title: "Magic, not scrambling, decides what you can learn: identifiability and extractability of metrological signals hidden by chaotic dynamics"
+  authors:
+    - family-names: Wakaura
+      given-names: Hikaru
+    - family-names: Tanimae
+      given-names: Taiki
+  year: 2026
+  notes: "arXiv number to be added upon posting"

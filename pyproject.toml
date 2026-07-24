@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qnoise-pack"
+version = "1.0.0"
+description = "Meta-metrology of scrambled signals: learnability phase diagram in (magic, access) — code and data for 'Magic, not scrambling, decides what you can learn'"
+authors = [
+  { name = "Hikaru Wakaura", email = "h.wakaura@qiri.co.jp" },
+  { name = "Taiki Tanimae", email = "t.tanimae@qiri.co.jp" },
+]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "matplotlib>=3.8",
+  "qiskit>=1.0",
+]
+license = { text = "MIT" }
+
+[tool.setuptools]
+packages = ["qnoise_metametrology"]
+
+# 環境固定の記録（再現に使用した実環境）:
+#   Python 3.13 / numpy 2.5.0 / scipy 1.18.0 / qiskit 2.5.0 / macOS (darwin 25.2)
+# 全スクリプトの乱数は default_rng([seed, t, a, ...]) で決定論的。

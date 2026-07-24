@@ -1,0 +1,4658 @@
+[
+ [
+  {
+   "t": 1,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.21875,
+   "branches": 5,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.125,
+   "branches": 8,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.109375,
+   "branches": 10,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.08984375,
+   "branches": 14,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.0654296875,
+   "branches": 22,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.05029296875,
+   "branches": 32,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.0303955078125,
+   "branches": 51,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.020355224609375,
+   "branches": 77,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.01572418212890625,
+   "branches": 117,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.011028289794921875,
+   "branches": 176,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.007908821105957031,
+   "branches": 262,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.00606083869934082,
+   "branches": 386,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.004562556743621826,
+   "branches": 578,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.0034777075052261353,
+   "branches": 855,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.0026558004319667816,
+   "branches": 1290,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.002034001052379608,
+   "branches": 1939,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.001503409817814827,
+   "branches": 2914,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0011407970450818539,
+   "branches": 4364,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0008690600516274571,
+   "branches": 6574,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.000669054948957637,
+   "branches": 9852,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0005190897572902031,
+   "branches": 14760,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0004006921426480403,
+   "branches": 22150,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.00032280699861075846,
+   "branches": 33317,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.0002168091217527035,
+   "branches": 49996,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.0001700947728409119,
+   "branches": 74914,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00012708517006387865,
+   "branches": 112361,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.00010125579375674931,
+   "branches": 168614,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 7.869501784996125e-05,
+   "branches": 252677,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 6.165163020604991e-05,
+   "branches": 378727,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.34375,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.3125,
+   "branches": 5,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.2890625,
+   "branches": 8,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.26953125,
+   "branches": 15,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.140625,
+   "branches": 18,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.1064453125,
+   "branches": 25,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.063720703125,
+   "branches": 39,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.03802490234375,
+   "branches": 59,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.024627685546875,
+   "branches": 90,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.01871490478515625,
+   "branches": 136,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.015600204467773438,
+   "branches": 206,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.010738372802734375,
+   "branches": 292,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.008319377899169922,
+   "branches": 430,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.005897164344787598,
+   "branches": 649,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.004664748907089233,
+   "branches": 956,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0036953166127204895,
+   "branches": 1423,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0025813039392232895,
+   "branches": 2132,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.001986671704798937,
+   "branches": 3213,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0013629574095830321,
+   "branches": 4834,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0010261596471536905,
+   "branches": 7248,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0007542344901594333,
+   "branches": 10866,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.0005341229134501191,
+   "branches": 16329,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.0003812331083281606,
+   "branches": 24514,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00029814590345722536,
+   "branches": 36637,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.00022658745953663129,
+   "branches": 54948,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 0.00017328645480318983,
+   "branches": 82391,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 0.00012580116467297842,
+   "branches": 123559,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.140625,
+   "branches": 9,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.09765625,
+   "branches": 13,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.0703125,
+   "branches": 18,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.0546875,
+   "branches": 26,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.0380859375,
+   "branches": 39,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.031494140625,
+   "branches": 57,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.0172882080078125,
+   "branches": 89,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.013011932373046875,
+   "branches": 132,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.010272026062011719,
+   "branches": 196,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.008272409439086914,
+   "branches": 290,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.00647890567779541,
+   "branches": 422,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.004907160997390747,
+   "branches": 634,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.003996632993221283,
+   "branches": 947,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.0030132178217172623,
+   "branches": 1415,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.002278189640492201,
+   "branches": 2122,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.001551185385324061,
+   "branches": 3189,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.0011359476775396615,
+   "branches": 4778,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0008740951088839211,
+   "branches": 7132,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0006737790081388084,
+   "branches": 10680,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0004946707222188707,
+   "branches": 15969,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0003514734914915607,
+   "branches": 23999,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0002609747944575247,
+   "branches": 35940,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0001977470151786065,
+   "branches": 53949,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.0001447870391508843,
+   "branches": 80896,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00010727601679594301,
+   "branches": 121426,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 8.176645783009029e-05,
+   "branches": 181900,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 5.983431927419902e-05,
+   "branches": 272894,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 4.617772768535089e-05,
+   "branches": 409585,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 3.46215385057351e-05,
+   "branches": 614422,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.3125,
+   "branches": 5,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.171875,
+   "branches": 8,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.16015625,
+   "branches": 11,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.0830078125,
+   "branches": 19,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.062744140625,
+   "branches": 29,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.04486083984375,
+   "branches": 45,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.0247802734375,
+   "branches": 70,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.0206298828125,
+   "branches": 104,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.015285491943359375,
+   "branches": 158,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.011727333068847656,
+   "branches": 237,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.009422063827514648,
+   "branches": 366,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.007868945598602295,
+   "branches": 550,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.0069115906953811646,
+   "branches": 815,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.004169963300228119,
+   "branches": 1215,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.0030598361045122147,
+   "branches": 1848,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.0020595011301338673,
+   "branches": 2771,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.0014782691141590476,
+   "branches": 4167,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0010626988078001887,
+   "branches": 6240,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0007708069097134285,
+   "branches": 9372,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0005940719620411983,
+   "branches": 14057,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0004701557859334571,
+   "branches": 21103,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.00033566029503617756,
+   "branches": 31701,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.00025014183293592396,
+   "branches": 47575,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00019114878318049477,
+   "branches": 71364,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00014473980628260108,
+   "branches": 107086,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00011299529558206345,
+   "branches": 160730,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 8.678706227505106e-05,
+   "branches": 241128,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 6.837758830885443e-05,
+   "branches": 361351,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 4.721730779359834e-05,
+   "branches": 542056,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.21875,
+   "branches": 5,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.1796875,
+   "branches": 7,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.1484375,
+   "branches": 8,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.130859375,
+   "branches": 11,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.12451171875,
+   "branches": 15,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.0732421875,
+   "branches": 24,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.0426025390625,
+   "branches": 38,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.030059814453125,
+   "branches": 59,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.0245513916015625,
+   "branches": 88,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.02295684814453125,
+   "branches": 132,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.014234542846679688,
+   "branches": 199,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.011080265045166016,
+   "branches": 298,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.0081709623336792,
+   "branches": 433,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.005936473608016968,
+   "branches": 656,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.004382438957691193,
+   "branches": 987,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0032611172646284103,
+   "branches": 1495,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.002616466023027897,
+   "branches": 2243,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0019655439537018538,
+   "branches": 3361,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0014724373468197882,
+   "branches": 5069,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0010705781896831468,
+   "branches": 7611,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0007885515115049202,
+   "branches": 11437,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.0005993182139718556,
+   "branches": 17143,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00043768995851678483,
+   "branches": 25713,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00033173519938145546,
+   "branches": 38573,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.0002558368773151187,
+   "branches": 57849,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 0.00019052012966724874,
+   "branches": 86808,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 0.00014064861405227447,
+   "branches": 130201,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.25,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.140625,
+   "branches": 9,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.08203125,
+   "branches": 15,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.08203125,
+   "branches": 15,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.0595703125,
+   "branches": 22,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.039306640625,
+   "branches": 35,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.02545166015625,
+   "branches": 54,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.01806640625,
+   "branches": 83,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.0133056640625,
+   "branches": 125,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.008754730224609375,
+   "branches": 195,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.0065822601318359375,
+   "branches": 293,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.005169391632080078,
+   "branches": 439,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.004055380821228027,
+   "branches": 661,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.0032310783863067627,
+   "branches": 993,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.0027648285031318665,
+   "branches": 1481,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.002484312281012535,
+   "branches": 2166,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.002218774985522032,
+   "branches": 3216,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.001856079907156527,
+   "branches": 4824,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0016611810715403408,
+   "branches": 7231,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0014856471461826004,
+   "branches": 10840,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0013315604064700892,
+   "branches": 16269,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0007581339273201593,
+   "branches": 24385,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00045637850541879743,
+   "branches": 36582,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00027816550354486935,
+   "branches": 54944,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00021458548977904002,
+   "branches": 82418,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.00016383479129267187,
+   "branches": 123254,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 0.00012241923477285255,
+   "branches": 184894,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 9.766619022955059e-05,
+   "branches": 277269,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.25,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.109375,
+   "branches": 10,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.07421875,
+   "branches": 16,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.0654296875,
+   "branches": 22,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.049072265625,
+   "branches": 33,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.03277587890625,
+   "branches": 48,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.0251007080078125,
+   "branches": 73,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.020450592041015625,
+   "branches": 108,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.01705646514892578,
+   "branches": 164,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.011524438858032227,
+   "branches": 250,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.009035468101501465,
+   "branches": 369,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.00703468918800354,
+   "branches": 550,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.004325971007347107,
+   "branches": 850,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.0032102204859256744,
+   "branches": 1268,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.0023327646777033806,
+   "branches": 1893,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.001846840837970376,
+   "branches": 2824,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.0013753609382547438,
+   "branches": 4205,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.001045712488121353,
+   "branches": 6312,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0008110839298751671,
+   "branches": 9474,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0006345465317281196,
+   "branches": 14233,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0004978597439730947,
+   "branches": 21310,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.00036097600957418763,
+   "branches": 31890,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0002567928941346054,
+   "branches": 47825,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.00018919560434227378,
+   "branches": 71567,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00014837745093920773,
+   "branches": 107244,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.0001053576893732533,
+   "branches": 160922,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 7.727890049291641e-05,
+   "branches": 241421,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 5.6547308675075625e-05,
+   "branches": 361973,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 4.389447127154528e-05,
+   "branches": 543087,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 3.431651585727828e-05,
+   "branches": 814609,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.34375,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.1484375,
+   "branches": 8,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.140625,
+   "branches": 9,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.080078125,
+   "branches": 16,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.060546875,
+   "branches": 26,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.04541015625,
+   "branches": 39,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.040283203125,
+   "branches": 51,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.02728271484375,
+   "branches": 78,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.0208740234375,
+   "branches": 108,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.0140380859375,
+   "branches": 164,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.011783599853515625,
+   "branches": 242,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.007794380187988281,
+   "branches": 367,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.005160093307495117,
+   "branches": 565,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.003573596477508545,
+   "branches": 849,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.0026880353689193726,
+   "branches": 1279,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.0018620491027832031,
+   "branches": 1918,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.0013648010790348053,
+   "branches": 2875,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.001046513207256794,
+   "branches": 4328,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0007283438462764025,
+   "branches": 6491,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.000517866516020149,
+   "branches": 9748,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0003961715119658038,
+   "branches": 14654,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0002996321054524742,
+   "branches": 21969,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.00021573268713837024,
+   "branches": 32973,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00016311450553985196,
+   "branches": 49497,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00012017574420042365,
+   "branches": 74228,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 8.603912269222747e-05,
+   "branches": 111164,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 6.30023629426546e-05,
+   "branches": 166659,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 4.748595638481845e-05,
+   "branches": 250037,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 3.6563916405274455e-05,
+   "branches": 375054,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.109375,
+   "branches": 10,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.08203125,
+   "branches": 15,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.076171875,
+   "branches": 21,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.06298828125,
+   "branches": 30,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.0501708984375,
+   "branches": 42,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.046600341796875,
+   "branches": 60,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.035797119140625,
+   "branches": 87,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.02213287353515625,
+   "branches": 135,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.018480300903320312,
+   "branches": 196,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.01361989974975586,
+   "branches": 294,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.009322762489318848,
+   "branches": 443,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.006303638219833374,
+   "branches": 663,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.0042907968163490295,
+   "branches": 993,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.003068862482905388,
+   "branches": 1490,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.0022233682684600353,
+   "branches": 2247,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.0015324497362598777,
+   "branches": 3360,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0011563148000277579,
+   "branches": 4983,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.000878888473380357,
+   "branches": 7470,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0006483394972747192,
+   "branches": 11204,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0004925669236399699,
+   "branches": 16823,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.00036804602768825134,
+   "branches": 25241,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0002784380924367724,
+   "branches": 37702,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00019865389975848302,
+   "branches": 56558,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00014933513635639883,
+   "branches": 84850,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00010796680259161917,
+   "branches": 127248,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 8.353697419760664e-05,
+   "branches": 191056,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 6.31996406899038e-05,
+   "branches": 286400,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 4.735308356867973e-05,
+   "branches": 429577,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.21875,
+   "branches": 5,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.203125,
+   "branches": 7,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.13671875,
+   "branches": 11,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.1181640625,
+   "branches": 16,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.072021484375,
+   "branches": 25,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.04815673828125,
+   "branches": 39,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.0322418212890625,
+   "branches": 58,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.02931976318359375,
+   "branches": 87,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.023206710815429688,
+   "branches": 142,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.01637887954711914,
+   "branches": 214,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.010661959648132324,
+   "branches": 321,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.00842246413230896,
+   "branches": 487,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.006068088114261627,
+   "branches": 733,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.004761768504977226,
+   "branches": 1105,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.003517359960824251,
+   "branches": 1652,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.002363577834330499,
+   "branches": 2470,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.00172008850495331,
+   "branches": 3714,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0014611835722462274,
+   "branches": 5573,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0011047899115510518,
+   "branches": 8378,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0007936000688459899,
+   "branches": 12581,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0006204459397167739,
+   "branches": 18820,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00047078689226509596,
+   "branches": 28248,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00034020050082972375,
+   "branches": 42775,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00027368017653373045,
+   "branches": 64301,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.0002097569592542925,
+   "branches": 96404,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 0.0001591730605730035,
+   "branches": 144601,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 0.00012360449278703278,
+   "branches": 216957,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.34375,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.1796875,
+   "branches": 7,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.1015625,
+   "branches": 11,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.072265625,
+   "branches": 17,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.05322265625,
+   "branches": 26,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.0382080078125,
+   "branches": 38,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.03253173828125,
+   "branches": 56,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.025787353515625,
+   "branches": 91,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.01906585693359375,
+   "branches": 135,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.015764236450195312,
+   "branches": 201,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.012492656707763672,
+   "branches": 303,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.008162140846252441,
+   "branches": 441,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.006652504205703735,
+   "branches": 651,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.004868738353252411,
+   "branches": 979,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.00396103598177433,
+   "branches": 1461,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.002717150840908289,
+   "branches": 2177,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0021218162728473544,
+   "branches": 3273,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.001637513778405264,
+   "branches": 4910,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.001163184359029401,
+   "branches": 7341,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0008791816562734311,
+   "branches": 11000,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0006338819371194404,
+   "branches": 16609,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.00044889502567002637,
+   "branches": 24932,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00032135531242261095,
+   "branches": 37390,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00024077511437070598,
+   "branches": 56153,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00017619104126254115,
+   "branches": 84293,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.00012962811646488603,
+   "branches": 126417,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 9.276376150690879e-05,
+   "branches": 189819,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 6.823962151636387e-05,
+   "branches": 284746,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.34375,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.1796875,
+   "branches": 7,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.138671875,
+   "branches": 10,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.10546875,
+   "branches": 15,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.06298828125,
+   "branches": 24,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.0523681640625,
+   "branches": 33,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.043731689453125,
+   "branches": 49,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.02759552001953125,
+   "branches": 73,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.020082473754882812,
+   "branches": 106,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.014124870300292969,
+   "branches": 162,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.011260271072387695,
+   "branches": 249,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.007102787494659424,
+   "branches": 383,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.005076512694358826,
+   "branches": 569,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.003770735114812851,
+   "branches": 857,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.0027940822765231133,
+   "branches": 1287,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.0019552193116396666,
+   "branches": 1914,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.0014259280869737267,
+   "branches": 2870,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0011133354564663023,
+   "branches": 4341,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0007916804024716839,
+   "branches": 6492,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0006246954762900714,
+   "branches": 9760,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.00048378610335930716,
+   "branches": 14685,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0003533709827934217,
+   "branches": 22153,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.00027237496249199467,
+   "branches": 33235,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00021614270272607428,
+   "branches": 49771,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00015266890680010192,
+   "branches": 74782,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00011665609708977343,
+   "branches": 112249,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 8.342188700760644e-05,
+   "branches": 168369,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 6.195692991173285e-05,
+   "branches": 252547,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 4.613423280988571e-05,
+   "branches": 378864,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.25,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.140625,
+   "branches": 9,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.12890625,
+   "branches": 12,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.1025390625,
+   "branches": 18,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.091552734375,
+   "branches": 27,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.08502197265625,
+   "branches": 37,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.0792083740234375,
+   "branches": 55,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.043262481689453125,
+   "branches": 82,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.03242015838623047,
+   "branches": 125,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.028118371963500977,
+   "branches": 187,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.016003549098968506,
+   "branches": 283,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.010266304016113281,
+   "branches": 421,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.00801384449005127,
+   "branches": 632,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.006347130984067917,
+   "branches": 956,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.004596001468598843,
+   "branches": 1428,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.00314924493432045,
+   "branches": 2126,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.002214629203081131,
+   "branches": 3173,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.001640037284232676,
+   "branches": 4765,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0011968181643169373,
+   "branches": 7170,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0008747078754822724,
+   "branches": 10769,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0006698822335238219,
+   "branches": 16065,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0004904201302906586,
+   "branches": 24115,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.0003857835638996221,
+   "branches": 36171,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.0002834321509652682,
+   "branches": 54321,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00021222654533303853,
+   "branches": 81187,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.00015345147454493002,
+   "branches": 121934,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 0.00011927488023144583,
+   "branches": 183031,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 9.603255667783861e-05,
+   "branches": 274405,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.25,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.140625,
+   "branches": 9,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.11328125,
+   "branches": 14,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.0947265625,
+   "branches": 22,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.087158203125,
+   "branches": 33,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.0787353515625,
+   "branches": 51,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.074310302734375,
+   "branches": 76,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.03900909423828125,
+   "branches": 119,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.03676414489746094,
+   "branches": 177,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.02753305435180664,
+   "branches": 264,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.018576502799987793,
+   "branches": 394,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.01762053370475769,
+   "branches": 593,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.013199932873249054,
+   "branches": 885,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.009882664307951927,
+   "branches": 1327,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.00673309713602066,
+   "branches": 1984,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.004369034431874752,
+   "branches": 2956,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.003336906898766756,
+   "branches": 4437,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.002752635977230966,
+   "branches": 6638,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0022642271069344133,
+   "branches": 9947,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0015036531840451062,
+   "branches": 14946,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0009864204976111068,
+   "branches": 22361,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0007298888342575083,
+   "branches": 33546,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.0005426565439279329,
+   "branches": 50326,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00042581842397737546,
+   "branches": 75468,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.0003360965859933174,
+   "branches": 113210,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.0002545846522918893,
+   "branches": 169853,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 0.00017126725007354793,
+   "branches": 254749,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 0.00012683068410823672,
+   "branches": 382187,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.25,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.171875,
+   "branches": 8,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.08984375,
+   "branches": 14,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.0673828125,
+   "branches": 21,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.051513671875,
+   "branches": 31,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.04083251953125,
+   "branches": 48,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.0270538330078125,
+   "branches": 72,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.01692962646484375,
+   "branches": 112,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.011545181274414062,
+   "branches": 169,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.008445262908935547,
+   "branches": 256,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.006619811058044434,
+   "branches": 380,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.0053566694259643555,
+   "branches": 569,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.0036202073097229004,
+   "branches": 869,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.002540960907936096,
+   "branches": 1321,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.0020188093185424805,
+   "branches": 1983,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.0015788823366165161,
+   "branches": 2979,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.0011396605987101793,
+   "branches": 4505,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0008308591204695404,
+   "branches": 6786,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0006591057026525959,
+   "branches": 10025,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0004622723390639294,
+   "branches": 15003,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.00035749489416048164,
+   "branches": 22417,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0002739991475664283,
+   "branches": 33673,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.00021416316991462736,
+   "branches": 50474,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00016251914495057918,
+   "branches": 75658,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00012647971366064326,
+   "branches": 113521,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 9.969577817425801e-05,
+   "branches": 170298,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 7.335528343088704e-05,
+   "branches": 255264,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 5.33231838001913e-05,
+   "branches": 382837,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 3.9044860289064176e-05,
+   "branches": 573990,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 1.0,
+   "branches": 1,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.171875,
+   "branches": 8,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.12890625,
+   "branches": 12,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.1162109375,
+   "branches": 17,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.098876953125,
+   "branches": 27,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.06036376953125,
+   "branches": 41,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.0577392578125,
+   "branches": 55,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.038604736328125,
+   "branches": 85,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.025074005126953125,
+   "branches": 126,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.01855754852294922,
+   "branches": 190,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.015941858291625977,
+   "branches": 286,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.0129585862159729,
+   "branches": 419,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.009201183915138245,
+   "branches": 615,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.00666404515504837,
+   "branches": 923,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.005065863952040672,
+   "branches": 1378,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0034989123232662678,
+   "branches": 2073,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.002030537696555257,
+   "branches": 3159,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0016131549491547048,
+   "branches": 4774,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.001195699631352909,
+   "branches": 7174,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0009392445754201617,
+   "branches": 10753,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0006884590447953087,
+   "branches": 16132,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.0005320645248048095,
+   "branches": 24196,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.0004089122294885783,
+   "branches": 36298,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00029106732141315206,
+   "branches": 54522,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.0002208997212171937,
+   "branches": 81760,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 0.00015721025929504862,
+   "branches": 122669,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 0.00011662963204472909,
+   "branches": 183972,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.34375,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.171875,
+   "branches": 8,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.12890625,
+   "branches": 12,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.0908203125,
+   "branches": 18,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.055908203125,
+   "branches": 28,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.04571533203125,
+   "branches": 41,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.0403289794921875,
+   "branches": 60,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.025714874267578125,
+   "branches": 84,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.01877117156982422,
+   "branches": 126,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.015447854995727539,
+   "branches": 185,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.013294816017150879,
+   "branches": 276,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.011111140251159668,
+   "branches": 411,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.009860187768936157,
+   "branches": 611,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.008123256266117096,
+   "branches": 914,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.005330244079232216,
+   "branches": 1367,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.004347932059317827,
+   "branches": 2028,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.0035001252545043826,
+   "branches": 3036,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.002861358196241781,
+   "branches": 4564,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.001976532868866343,
+   "branches": 6832,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0013886232245567953,
+   "branches": 10299,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0010240275537398702,
+   "branches": 15423,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0007204573158787753,
+   "branches": 23131,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0004958601913642724,
+   "branches": 34699,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.0003788380354521337,
+   "branches": 52084,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.0002772581438552635,
+   "branches": 78127,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00022488998474168298,
+   "branches": 117002,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.00017597477430308928,
+   "branches": 175581,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 0.00014241715153218149,
+   "branches": 263532,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 9.863278518459917e-05,
+   "branches": 395431,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.09375,
+   "branches": 12,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.0703125,
+   "branches": 18,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.052734375,
+   "branches": 27,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.03369140625,
+   "branches": 42,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.0245361328125,
+   "branches": 66,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.01861572265625,
+   "branches": 101,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.0132293701171875,
+   "branches": 150,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.010654449462890625,
+   "branches": 225,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.008078575134277344,
+   "branches": 335,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.006688356399536133,
+   "branches": 501,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.005213916301727295,
+   "branches": 760,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.004166498780250549,
+   "branches": 1152,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.0033163167536258698,
+   "branches": 1752,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.002737688831984997,
+   "branches": 2613,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.0023304042406380177,
+   "branches": 3923,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.001482247724197805,
+   "branches": 5877,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.0011291927949059755,
+   "branches": 8811,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0008198320501833223,
+   "branches": 13185,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.000599367196628009,
+   "branches": 19766,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.00042477342185520683,
+   "branches": 29628,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0003157245486136162,
+   "branches": 44444,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.00023550605456534868,
+   "branches": 66676,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.00017233845476738452,
+   "branches": 100079,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00012848535285492346,
+   "branches": 150122,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 9.597137240957565e-05,
+   "branches": 225179,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 7.438834982542719e-05,
+   "branches": 337880,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 5.702637028329183e-05,
+   "branches": 506951,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 4.1797154144949944e-05,
+   "branches": 760647,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 3.294085136890286e-05,
+   "branches": 1140844,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.34375,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.171875,
+   "branches": 8,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.10546875,
+   "branches": 12,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.0869140625,
+   "branches": 17,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.082275390625,
+   "branches": 22,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.0621337890625,
+   "branches": 34,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.0577392578125,
+   "branches": 40,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.038909912109375,
+   "branches": 60,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.03301239013671875,
+   "branches": 89,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.025835037231445312,
+   "branches": 135,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.019391536712646484,
+   "branches": 202,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.014639019966125488,
+   "branches": 301,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.012057453393936157,
+   "branches": 455,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.008097879588603973,
+   "branches": 681,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.0058551449328660965,
+   "branches": 1032,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.004235635977238417,
+   "branches": 1550,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.0031455602729693055,
+   "branches": 2328,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.002598040009615943,
+   "branches": 3469,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0020901735479128547,
+   "branches": 5216,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0013799532662233105,
+   "branches": 7838,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0010539338568378298,
+   "branches": 11763,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0007601952671620893,
+   "branches": 17685,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0006202735447971008,
+   "branches": 26584,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00045011804133565647,
+   "branches": 39813,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00034641053945527744,
+   "branches": 59747,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00025005199126981736,
+   "branches": 89602,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.00019128079975694323,
+   "branches": 134426,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 0.00013644402979220982,
+   "branches": 201519,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 0.000101594627062572,
+   "branches": 302364,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.140625,
+   "branches": 9,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.11328125,
+   "branches": 14,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.0673828125,
+   "branches": 21,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.049072265625,
+   "branches": 33,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.03997802734375,
+   "branches": 49,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.0262908935546875,
+   "branches": 73,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.020236968994140625,
+   "branches": 109,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.015110969543457031,
+   "branches": 164,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.010522842407226562,
+   "branches": 240,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.007243633270263672,
+   "branches": 364,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.005392789840698242,
+   "branches": 548,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.004129692912101746,
+   "branches": 821,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.003175634890794754,
+   "branches": 1227,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.0023971712216734886,
+   "branches": 1824,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.0017178065609186888,
+   "branches": 2723,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.0013246593880467117,
+   "branches": 4098,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.0010013557475758716,
+   "branches": 6170,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0008192890200007241,
+   "branches": 9244,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0006350358207782847,
+   "branches": 13859,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0004928949763325363,
+   "branches": 20823,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0003307723738430468,
+   "branches": 31305,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0002464607822361131,
+   "branches": 46953,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.00017610828839664805,
+   "branches": 70310,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00013213967980707508,
+   "branches": 105499,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 9.680644456078191e-05,
+   "branches": 158200,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 7.341155284629197e-05,
+   "branches": 237311,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 5.516459420358555e-05,
+   "branches": 356124,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 4.2442721645750275e-05,
+   "branches": 534132,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 3.294890296592478e-05,
+   "branches": 801241,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.375,
+   "branches": 3,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.34375,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.328125,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.3203125,
+   "branches": 10,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.318359375,
+   "branches": 14,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.31689453125,
+   "branches": 20,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.2845458984375,
+   "branches": 30,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.150665283203125,
+   "branches": 46,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.11693572998046875,
+   "branches": 69,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.09854698181152344,
+   "branches": 104,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.061853885650634766,
+   "branches": 159,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.0520094633102417,
+   "branches": 234,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.036657482385635376,
+   "branches": 348,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.03511115908622742,
+   "branches": 502,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.027531996369361877,
+   "branches": 757,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.018668493255972862,
+   "branches": 1146,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.014059652108699083,
+   "branches": 1722,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.009440849418751895,
+   "branches": 2577,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.007084067881805822,
+   "branches": 3852,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0048221147153526545,
+   "branches": 5947,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.003788587200688198,
+   "branches": 8902,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0027900780296477024,
+   "branches": 13368,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.002238109379504749,
+   "branches": 20071,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0015340170696163113,
+   "branches": 30114,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0011135209006738478,
+   "branches": 45202,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.0008669947620916219,
+   "branches": 67793,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.0006300618702326233,
+   "branches": 101725,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00043938667576792767,
+   "branches": 152543,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.00033893258531880743,
+   "branches": 228811,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 0.00025421520668936215,
+   "branches": 343046,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 0.00020242737576735975,
+   "branches": 514399,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.25,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.140625,
+   "branches": 9,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.12890625,
+   "branches": 12,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.1025390625,
+   "branches": 18,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.093505859375,
+   "branches": 26,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.08203125,
+   "branches": 39,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.07843017578125,
+   "branches": 55,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.0413360595703125,
+   "branches": 84,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.03969573974609375,
+   "branches": 128,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.029535293579101562,
+   "branches": 193,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.026317119598388672,
+   "branches": 288,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.024608612060546875,
+   "branches": 454,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.013632774353027344,
+   "branches": 681,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.012453675270080566,
+   "branches": 1029,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.011934041976928711,
+   "branches": 1494,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.01134660467505455,
+   "branches": 2241,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.008513388223946095,
+   "branches": 3376,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.007016102550551295,
+   "branches": 5069,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.006027560972142965,
+   "branches": 7622,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.003509409143589437,
+   "branches": 11455,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0026224244211334735,
+   "branches": 17159,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0021327689828467555,
+   "branches": 25748,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.001393132970406441,
+   "branches": 38626,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.0010020262852776796,
+   "branches": 57922,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.0006744613560840662,
+   "branches": 86900,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.0004874271490962201,
+   "branches": 130371,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 0.00037231296535367164,
+   "branches": 195555,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 0.0002652230483715101,
+   "branches": 293598,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 0.0002061363634333624,
+   "branches": 440280,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 0.00014948004798964742,
+   "branches": 660491,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.25,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.109375,
+   "branches": 10,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.08203125,
+   "branches": 15,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.0654296875,
+   "branches": 22,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.04833984375,
+   "branches": 36,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.02880859375,
+   "branches": 46,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.0191650390625,
+   "branches": 71,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.01300048828125,
+   "branches": 111,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.0102386474609375,
+   "branches": 164,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.008609771728515625,
+   "branches": 241,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.007260322570800781,
+   "branches": 359,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.0043048858642578125,
+   "branches": 482,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.003555774688720703,
+   "branches": 718,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.0026940107345581055,
+   "branches": 1077,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.001944318413734436,
+   "branches": 1610,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.001546468585729599,
+   "branches": 2429,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.0011676354333758354,
+   "branches": 3618,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.0008119188714772463,
+   "branches": 5431,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0006051631062291563,
+   "branches": 8145,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0004496930487221107,
+   "branches": 12169,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.00033437653110013343,
+   "branches": 18248,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.000255625814133964,
+   "branches": 27368,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0001828504794048058,
+   "branches": 41150,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.00013629871426701357,
+   "branches": 61806,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.00010124100005270975,
+   "branches": 92724,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 7.476493035696308e-05,
+   "branches": 139159,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 5.549596612031138e-05,
+   "branches": 208808,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 4.1768188552948615e-05,
+   "branches": 313193,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 3.1428057668592135e-05,
+   "branches": 469784,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 2.3717305180623316e-05,
+   "branches": 704621,
+   "collisions": 0
+  }
+ ],
+ [
+  {
+   "t": 1,
+   "purity": 0.5,
+   "branches": 2,
+   "collisions": -1
+  },
+  {
+   "t": 2,
+   "purity": 0.25,
+   "branches": 4,
+   "collisions": -1
+  },
+  {
+   "t": 3,
+   "purity": 0.1875,
+   "branches": 6,
+   "collisions": -1
+  },
+  {
+   "t": 4,
+   "purity": 0.109375,
+   "branches": 10,
+   "collisions": -1
+  },
+  {
+   "t": 5,
+   "purity": 0.08203125,
+   "branches": 15,
+   "collisions": -1
+  },
+  {
+   "t": 6,
+   "purity": 0.0673828125,
+   "branches": 21,
+   "collisions": -1
+  },
+  {
+   "t": 7,
+   "purity": 0.0498046875,
+   "branches": 30,
+   "collisions": -1
+  },
+  {
+   "t": 8,
+   "purity": 0.042724609375,
+   "branches": 43,
+   "collisions": -1
+  },
+  {
+   "t": 9,
+   "purity": 0.03021240234375,
+   "branches": 60,
+   "collisions": -1
+  },
+  {
+   "t": 10,
+   "purity": 0.0231170654296875,
+   "branches": 90,
+   "collisions": -1
+  },
+  {
+   "t": 11,
+   "purity": 0.018238067626953125,
+   "branches": 134,
+   "collisions": -1
+  },
+  {
+   "t": 12,
+   "purity": 0.011690139770507812,
+   "branches": 207,
+   "collisions": -1
+  },
+  {
+   "t": 13,
+   "purity": 0.008755683898925781,
+   "branches": 313,
+   "collisions": -1
+  },
+  {
+   "t": 14,
+   "purity": 0.007111310958862305,
+   "branches": 463,
+   "collisions": -1
+  },
+  {
+   "t": 15,
+   "purity": 0.006115257740020752,
+   "branches": 684,
+   "collisions": -1
+  },
+  {
+   "t": 16,
+   "purity": 0.004323706030845642,
+   "branches": 1025,
+   "collisions": 0
+  },
+  {
+   "t": 17,
+   "purity": 0.0030594952404499054,
+   "branches": 1536,
+   "collisions": -1
+  },
+  {
+   "t": 18,
+   "purity": 0.0022343676537275314,
+   "branches": 2308,
+   "collisions": -1
+  },
+  {
+   "t": 19,
+   "purity": 0.0017254711128771305,
+   "branches": 3461,
+   "collisions": -1
+  },
+  {
+   "t": 20,
+   "purity": 0.001158968429081142,
+   "branches": 5191,
+   "collisions": -1
+  },
+  {
+   "t": 21,
+   "purity": 0.0008912994235288352,
+   "branches": 7726,
+   "collisions": -1
+  },
+  {
+   "t": 22,
+   "purity": 0.0006813972504460253,
+   "branches": 11593,
+   "collisions": -1
+  },
+  {
+   "t": 23,
+   "purity": 0.0005051800817454932,
+   "branches": 17397,
+   "collisions": -1
+  },
+  {
+   "t": 24,
+   "purity": 0.0003757108611353033,
+   "branches": 26065,
+   "collisions": -1
+  },
+  {
+   "t": 25,
+   "purity": 0.0003017831235183621,
+   "branches": 39046,
+   "collisions": -1
+  },
+  {
+   "t": 26,
+   "purity": 0.00023945225146349003,
+   "branches": 58589,
+   "collisions": -1
+  },
+  {
+   "t": 27,
+   "purity": 0.0001660562039731417,
+   "branches": 87797,
+   "collisions": -1
+  },
+  {
+   "t": 28,
+   "purity": 0.00012754959173655323,
+   "branches": 131727,
+   "collisions": -1
+  },
+  {
+   "t": 29,
+   "purity": 9.505276838916998e-05,
+   "branches": 197584,
+   "collisions": -1
+  },
+  {
+   "t": 30,
+   "purity": 7.585331808124263e-05,
+   "branches": 296446,
+   "collisions": -1
+  },
+  {
+   "t": 31,
+   "purity": 5.230621641108546e-05,
+   "branches": 444867,
+   "collisions": -1
+  },
+  {
+   "t": 32,
+   "purity": 3.718788996467243e-05,
+   "branches": 667258,
+   "collisions": 0
+  }
+ ]
+]

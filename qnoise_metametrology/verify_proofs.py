@@ -123,6 +123,15 @@ def response_norm_sq(blocks_or_u, n, a, use_matrix=None):
     return float(np.sum(np.abs(R) ** 2).real)
 
 
+FAILURES = []
+
+
+def _gate(label, ok):
+    print(f"  [{'OK' if ok else 'FAIL'}] {label}")
+    if not ok:
+        FAILURES.append(label)
+
+
 def check0_weingarten(n=6, a=4, samples=300, seed=1):
     from scipy.stats import unitary_group
     rng = np.random.default_rng(seed)
@@ -144,6 +153,13 @@ def check0_weingarten(n=6, a=4, samples=300, seed=1):
     print(f"  Clifford E<R,R> = {np.mean(cliffs):.5f} "
           f"+/- {np.std(cliffs) / np.sqrt(samples):.5f}   "
           f"(std {np.std(cliffs):.4f})  <- same mean, larger spread")
+    _gate("check0 Haar mean within 5 SE of 2g",
+          abs(np.mean(haar) - target) < 5 * np.std(haar) / np.sqrt(samples))
+    _gate("check0 Clifford mean within 5 SE of 2g",
+          abs(np.mean(cliffs) - target)
+          < 5 * np.std(cliffs) / np.sqrt(samples))
+    _gate("check0 Clifford spread exceeds Haar spread (4-design gap)",
+          np.std(cliffs) > 3 * np.std(haar))
 
 
 def check1_stabilizer(n=12, a_list=(6, 8, 9), samples=200, seed=2):
@@ -179,6 +195,8 @@ def check1_stabilizer(n=12, a_list=(6, 8, 9), samples=200, seed=2):
         print(f"{a:>3} {1 - np.exp(-lam):>13.3f} {np.mean(vis):>13.3f} "
               f"{np.mean(etas_pred):>18.3f} {np.mean(etas_meas):>16.3f} "
               f"{match:>10d}/{len(etas_meas)}")
+        _gate(f"check1 per-seed formula match a={a} "
+              f"({match}/{len(etas_meas)})", match == len(etas_meas))
 
 
 def check2_rank_tolerance(n=10, a_list=(3, 5, 6, 8), t_list=(0, 2, 6, 12),
@@ -194,18 +212,25 @@ def check2_rank_tolerance(n=10, a_list=(3, 5, 6, 8), t_list=(0, 2, 6, 12),
             for seed in range(seeds):
                 rng = np.random.default_rng([seed, t, a, 0])
                 blocks = synth_blocks(n, t, max(t, 1), rng)
-                res = identifiability_gram(blocks, n, a)
-                olds.append(res["gram_rank"] / res["gram_m"])
-                # recompute with absolute tolerance
+                # TRUE old behaviour: lam_max-relative tolerance only
+                olds.append(_rank_rel(blocks, n, a))
+                # corrected: absolute tolerance anchored at 2g * 1e-6
                 tol_abs = 2 * g_const(2 ** a, 2 ** n) * 1e-6
-                # reconstruct spectrum from stored fields is impossible ->
-                # recompute gram directly
                 news.append(_rank_abs(blocks, n, a, tol_abs))
             row.append(f"{np.mean(olds):.2f}/{np.mean(news):.2f}")
+            if a == 3 and t == 0:
+                # the erratum: relative tolerance inflates rank when the
+                # Gram is numerically zero; corrected value matches the
+                # exact visibility prediction 0.031
+                _gate("check2 old rel-tolerance inflates a=3,t=0 rank "
+                      f"({np.mean(olds):.2f} > 0.3)", np.mean(olds) > 0.3)
+                _gate("check2 corrected a=3,t=0 rank near exact 0.031 "
+                      f"({np.mean(news):.2f})", abs(np.mean(news) - 0.031)
+                      < 0.03)
         print(f"{a:>3} " + "  ".join(f"{s:>12s}" for s in row))
 
 
-def _rank_abs(blocks, n, a, tol_abs):
+def _gram_eigs(blocks, n, a):
     from qiskit.quantum_info import Statevector as SV
     from prototype_lean import apply_block
     psi0 = np.zeros(2 ** n, dtype=complex)
@@ -231,10 +256,28 @@ def _rank_abs(blocks, n, a, tol_abs):
             responses.append(R.reshape(-1))
     M = np.array(responses)
     ev = np.clip(np.linalg.eigvalsh((M @ M.conj().T).real), 0, None)
+    return ev
+
+
+def _rank_abs(blocks, n, a, tol_abs):
+    ev = _gram_eigs(blocks, n, a)
     return float(np.sum(ev > tol_abs) / len(ev))
 
 
+def _rank_rel(blocks, n, a):
+    """The pre-erratum rank: lam_max-relative tolerance only."""
+    ev = _gram_eigs(blocks, n, a)
+    lam_max = float(ev[-1])
+    return float(np.sum(ev > max(lam_max, 1e-300) * 1e-8) / len(ev))
+
+
 if __name__ == "__main__":
+    import sys
     check0_weingarten()
     check1_stabilizer()
     check2_rank_tolerance()
+    print(f"\nverify_proofs: {'PASSED' if not FAILURES else 'FAILED'} "
+          f"({len(FAILURES)} gate failures)")
+    for f in FAILURES:
+        print(f"  FAILED: {f}")
+    sys.exit(0 if not FAILURES else 1)

@@ -177,12 +177,42 @@ def main():
     check("P_id t=6 S=1e4 q=2% (robustness)",
           cell(6, 10000, 0.02)["p_identify"], 0.8875, 0.01)
 
+    # ---- 8b. S*_id interpolation (SM-E table, coverage gap G3) ---------
+    recs = json.load(open(DATA / "noise_recovery_n10_a5.json"))
+    sstar_expected = {2: 6874, 6: 2653, 12: 2581, 16: 2607, 32: 2264}
+    for t, exp in sstar_expected.items():
+        row = sorted([(r["S"], r["p_identify"]) for r in recs
+                      if r["t"] == t and r["q"] == 0.0])
+        Ss = np.array([x[0] for x in row], float)
+        Ps = np.array([x[1] for x in row])
+        i = int(np.argmax(Ps >= 0.5))
+        s = np.interp(0.5, [Ps[i - 1], Ps[i]],
+                      np.log10([Ss[i - 1], Ss[i]])) if i > 0 \
+            else np.log10(Ss[0])
+        check(f"S*_id t={t}", float(10 ** s), exp, exp * 0.02)
+
+    # ---- 8c. f=0.8 noise contrast (coverage gap G5) --------------------
+    recs = json.load(open(DATA / "noise_recovery_n10_a8.json"))
+    v = [r for r in recs if r["t"] == 0 and r["S"] == 1000
+         and r["q"] == 0.0][0]
+    check("P_id f=0.8 t=0 S=1e3 (no t=0 failure at high f)",
+          v["p_identify"], 0.994, 0.01)
+
+    # ---- 8d. shipped occupancy-model rates (coverage gap G1) -----------
+    mw = json.load(open(DATA / "maxw_model.json"))
+    for M, exp in [("1", 0.18217), ("4", 0.17420), ("16", 0.16387),
+                   ("64", 0.15152), ("256", 0.13730)]:
+        check(f"shipped M-sweep rate M={M}", mw["M_sweep"][M], exp, 0.002)
+
     # ---- 9. extensive generator ----------------------------------------
     recs = json.load(open(DATA / "results_oneshot_n8_sumx.json"))
     eta0 = np.mean([r["eta_needle"] for r in recs
                     if r["t"] == 0 and r["a"] == 6])
     check("sumx eta(0) a=6 (needle multiplicity 1/n)", float(eta0),
           0.130, 0.005)
+    for a, exp, tol in [(5, 0.1698, 0.003), (6, 0.0611, 0.003)]:
+        al = fit_eta(recs, a)
+        check(f"sumx alpha a={a} (coverage gap G4)", al, exp, tol)
 
     # ---- 10. interleaved eta(0) = 1/L ----------------------------------
     for fn, L in [("leanL2_interleaved_n10.json", 2),

@@ -2,8 +2,8 @@
 
 Code, data, and one-command reproduction for:
 
-> **Magic, not scrambling, decides what you can learn: identifiability and
-> extractability of metrological signals hidden by chaotic dynamics**
+> **Identifiability and Pauli-setting concentration of metrological signals
+> under doped-Clifford scrambling**
 > Hikaru Wakaura and Taiki Tanimae (QIRI, Tokyo, 2026)
 > arXiv: *to be added upon posting*
 
@@ -12,16 +12,20 @@ Repository: https://github.com/deeptell-inc/qnoise-pack — archived on Zenodo (
 
 ## TL;DR of the paper
 
-A signal $\theta$ encoded by an unknown generator $G$ and hidden by unknown
-$t$-doped Clifford dynamics can be recovered only inside a two-resource
-window: the access fraction $f = |A|/n$ controls an information-theoretic
-wall (one-shot: $f > 1/2$), while the magic $t$ controls a computational
-collapse of extractability, $\eta \sim e^{-\alpha t}$ with
-$\alpha = 0.142 \pm 0.015$ measured over $n = 8$–$16$, saturating the rate
-$\ln(4/3)/2$ of a proven branching-law upper bound. Magic simultaneously
-*enables* identification of the unknown generator and *destroys* efficient
-estimation of its value; identification cost is flat in $t$ while estimation
-cost inflates exponentially.
+For a signal $\theta$ encoded by an unknown generator $G$ and hidden by
+sampled $t$-doped Clifford dynamics, we study two calibrated tasks:
+*structural identification* of the generator within a probe dictionary
+(response Gram matrix; ensemble mean computed exactly by a two-copy twirl
+and independent of magic), and the *concentration of sensitivity over Pauli
+readout settings*. Numerically over $n = 8$–$16$, the fraction of
+sensitivity carried by the best single Pauli setting collapses with $t$
+(descriptive mean rate $\alpha = 0.142 \pm 0.015$) while identifiability
+rank fills in — magic simultaneously enables identification and disperses
+single-setting sensitivity. A collision-free *operator-level* branching law
+with rate $\ln(4/3)/2$ is proven and verified up to $n = 1000$ as a
+benchmark; its transfer to the accessible needle statistic, arbitrary
+measurement strategies, and asymptotic rates are open (see the manuscript
+for the precise, calibrated claims).
 
 ## Quick start
 
@@ -42,7 +46,7 @@ What the fast tier checks:
 | live | Weingarten constant $2g$ vs 300 Haar samples; exact Clifford-point formulas (120/120); branch tree vs dense matrices; occupancy-model $\mathbb{E}[\max w]$, $\mathbb{E}[\sqrt\Pi]$ rates and $M$-sweep | analytic values |
 | fits | 10 needle exponents $\alpha$ ($n=8$–$16$), 4 family exponents, 4 purity rates, 3 doping ensembles (T / 4-parallel-T / CCZ) | quoted values |
 | operator level | branch-tree purity rates at $n = 100$ and $n = 1000$, zero collisions | $\ln(4/3)$ |
-| protocol | identifiability rank filling, sweet-spot cell values, noise-recovery table ($P_{\rm id}$, $\hat\theta$ error), visibility ceiling $= \mathbb{E}[\mathrm{rank}\,\Gamma]/m$ | quoted values |
+| protocol | identifiability rank filling, sweet-spot cell values, noise-recovery table ($P_{\rm id}$, $\hat\theta$ error), implemented-classifier ceiling $\mathbb{E}[\mathrm{rank}\,\Gamma]/m + (1-\mathbb{E}[\mathrm{rank}\,\Gamma]/m)/m$ | quoted values |
 | figures | regenerates the three manuscript figures from data | file existence |
 
 ## Layout

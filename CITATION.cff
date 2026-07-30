@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite the accompanying paper."
-title: "qnoise-metametrology: code and data for 'Magic, not scrambling, decides what you can learn'"
+title: "qnoise-pack: code, data, and reproduction driver for 'Identifiability and Pauli-setting concentration of metrological signals under doped-Clifford scrambling'"
 authors:
   - family-names: Wakaura
     given-names: Hikaru
@@ -16,7 +16,7 @@ repository-code: "https://github.com/deeptell-inc/qnoise-pack"
 doi: 10.5281/zenodo.21532189
 preferred-citation:
   type: article
-  title: "Magic, not scrambling, decides what you can learn: identifiability and extractability of metrological signals hidden by chaotic dynamics"
+  title: "Identifiability and Pauli-setting concentration of metrological signals under doped-Clifford scrambling"
   authors:
     - family-names: Wakaura
       given-names: Hikaru

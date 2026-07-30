@@ -204,6 +204,24 @@ def main():
                    ("64", 0.15152), ("256", 0.13730)]:
         check(f"shipped M-sweep rate M={M}", mw["M_sweep"][M], exp, 0.002)
 
+    # ---- 8e. fair-budget comparison (charged calibration) --------------
+    recs = json.load(open(DATA / "fair_budget_n10_a5.json"))
+
+    def fb(t, K, S):
+        return [r for r in recs if r["t"] == t and r["K"] == K
+                and r["S"] == S][0]
+
+    check("fair-budget P_id t=16 K=128", fb(16, 128, 4096)["p_identify"],
+          0.4125, 0.005)
+    check("fair-budget P_id t=16 K=512", fb(16, 512, 4096)["p_identify"],
+          0.75, 0.005)
+    check("fair-budget P_id t=16 K=1023", fb(16, 1023, 4096)["p_identify"],
+          0.9812, 0.005)
+    check("fair-budget P_id t=6 K=1023", fb(6, 1023, 4096)["p_identify"],
+          0.8812, 0.005)
+    check("fair-budget charged B at K=1023",
+          float(fb(16, 1023, 4096)["budget"]), 175992832, 1)
+
     # ---- 9. extensive generator ----------------------------------------
     recs = json.load(open(DATA / "results_oneshot_n8_sumx.json"))
     eta0 = np.mean([r["eta_needle"] for r in recs

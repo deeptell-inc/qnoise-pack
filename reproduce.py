@@ -176,6 +176,14 @@ def main():
           cell(0, 100000, 0.02)["p_identify"], 0.34375, 0.005)
     check("P_id t=6 S=1e4 q=2% (robustness)",
           cell(6, 10000, 0.02)["p_identify"], 0.8875, 0.01)
+    # estimation-error inflation t=32 vs t=6 (manuscript: 3.3x at S=1e4,
+    # 4.1x at S=1e5; NOT "4-5x" / "an order of magnitude")
+    check("rel_err ratio t32/t6 S=1e4",
+          cell(32, 10000, 0.0)["rel_err_theta"]
+          / cell(6, 10000, 0.0)["rel_err_theta"], 3.276, 0.05)
+    check("rel_err ratio t32/t6 S=1e5",
+          cell(32, 100000, 0.0)["rel_err_theta"]
+          / cell(6, 100000, 0.0)["rel_err_theta"], 4.060, 0.05)
 
     # ---- 8b. S*_id interpolation (SM-E table, coverage gap G3) ---------
     recs = json.load(open(DATA / "noise_recovery_n10_a5.json"))
@@ -233,13 +241,45 @@ def main():
         check(f"sumx alpha a={a} (coverage gap G4)", al, exp, tol)
 
     # ---- 10. interleaved eta(0) = 1/L ----------------------------------
+    # per-cell deviation counts |eta(0) - 1/L| > 0.02 out of 8 seeds
+    # (manuscript SM-C: identity holds cleanly only at high access a=8,
+    # 22/24 seeds; lower-access cells are dominated by degenerate
+    # realizations -- up to 8/8 at a=3)
+    dev_expected = {
+        ("leanL2_interleaved_n10.json", 6): 5,
+        ("leanL2_interleaved_n10.json", 8): 1,
+        ("lean_interleaved_n10.json", 3): 8,
+        ("lean_interleaved_n10.json", 5): 7,
+        ("lean_interleaved_n10.json", 6): 5,
+        ("lean_interleaved_n10.json", 8): 1,
+        ("leanL8_interleaved_n10.json", 6): 6,
+        ("leanL8_interleaved_n10.json", 8): 0,
+    }
     for fn, L in [("leanL2_interleaved_n10.json", 2),
                   ("lean_interleaved_n10.json", 4),
                   ("leanL8_interleaved_n10.json", 8)]:
         recs = json.load(open(DATA / fn))
         med = float(np.median([r["eta_needle"] for r in recs
                                if r["t"] == 0 and r["a"] == 8]))
-        check(f"interleaved median eta(0) L={L}", med, 1.0 / L, 0.02)
+        check(f"interleaved median eta(0) L={L} a=8", med, 1.0 / L, 0.02)
+        avail = sorted({r["a"] for r in recs})
+        for a in avail:
+            if (fn, a) not in dev_expected:
+                continue
+            v = np.array([r["eta_needle"] for r in recs
+                          if r["t"] == 0 and r["a"] == a])
+            dev = int(np.sum(np.abs(v - 1.0 / L) > 0.02))
+            check(f"interleaved eta(0) deviations L={L} a={a}",
+                  float(dev), float(dev_expected[(fn, a)]), 0.5)
+    # interleaved/one-shot floor ratios (manuscript: 441, 7.7, 17 at
+    # f = 0.5, 0.6, 0.8 -- NOT "10-30x")
+    af = json.load(open(DATA / "alpha_fits.json"))
+    n10 = [r for r in af if r["n"] == 10]
+    inter = {r["a"]: r["floor"] for r in n10[:3]}   # first triple: L=4
+    ones = {r["a"]: r["floor"] for r in n10[3:6]}   # second triple: one-shot
+    for a, exp in [(5, 440.9), (6, 7.67), (8, 17.20)]:
+        check(f"interleaved/one-shot floor ratio a={a}",
+              inter[a] / ones[a], exp, exp * 0.01)
 
     # ---- 11. figures regenerate ----------------------------------------
     run([PY, PKG / "make_figures.py", "--data", DATA, "--out",

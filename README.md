@@ -17,15 +17,18 @@ sampled $t$-doped Clifford dynamics, we study two calibrated tasks:
 *structural identification* of the generator within a probe dictionary
 (response Gram matrix; ensemble mean computed exactly by a two-copy twirl
 and independent of magic), and the *concentration of sensitivity over Pauli
-readout settings*. Numerically over $n = 8$–$16$, the fraction of
+readout settings*. Numerically over $n = 8$–$18$, the fraction of
 sensitivity carried by the best single Pauli setting collapses with $t$
-(descriptive mean rate $\alpha = 0.142 \pm 0.015$) while identifiability
-rank fills in — magic simultaneously enables identification and disperses
-single-setting sensitivity. A collision-free *operator-level* branching law
-with rate $\ln(4/3)/2$ is proven and verified up to $n = 1000$ as a
-benchmark; its transfer to the accessible needle statistic, arbitrary
-measurement strategies, and asymptotic rates are open (see the manuscript
-for the precise, calibrated claims).
+(descriptive mean rate $\alpha = 0.142 \pm 0.014$ over twelve fits) while
+identifiability rank fills in — magic simultaneously enables identification
+and disperses single-setting sensitivity. A collision-free *operator-level*
+branching law with rate $\ln(4/3)/2$ is proven and verified up to
+$n = 1000$ as a benchmark; the visibility-filter step of its transfer to
+the accessible statistic and the flatness of every fixed stabilizer readout
+family are proven (Propositions 5–6), measured Gram conditioning tracks the
+analytic mean scale $2g$, and the remaining open elements (state-level
+partner factor, measurement implementation cost, asymptotic rates) are
+stated in the manuscript's calibrated claims.
 
 ## Quick start
 
@@ -35,7 +38,7 @@ python reproduce.py       # fast tier (~5-10 min): every number in the paper
 python reproduce.py --full   # regenerate the sweeps themselves (hours)
 ```
 
-`reproduce.py` re-derives ~45 quoted values from the shipped data and live
+`reproduce.py` re-derives ~90 quoted values from the shipped data and live
 verification suites and exits nonzero on any mismatch. All RNG is seeded
 (`default_rng([seed, t, a, ...])`): reruns are bit-reproducible.
 
@@ -44,7 +47,7 @@ What the fast tier checks:
 | block | what | against |
 |---|---|---|
 | live | Weingarten constant $2g$ vs 300 Haar samples; exact Clifford-point formulas (120/120); branch tree vs dense matrices; occupancy-model $\mathbb{E}[\max w]$, $\mathbb{E}[\sqrt\Pi]$ rates and $M$-sweep | analytic values |
-| fits | 10 needle exponents $\alpha$ ($n=8$–$16$), 4 family exponents, 4 purity rates, 3 doping ensembles (T / 4-parallel-T / CCZ) | quoted values |
+| fits | 12 needle exponents $\alpha$ ($n=8$–$18$), 4 family exponents, 4 purity rates, 3 doping ensembles (T / 4-parallel-T / CCZ), interleaved per-cell $\eta(0)$ deviations and floor ratios, Gram conditioning $\lambda_{\min}/2g$ and $\kappa$ ($n=8$–$14$) | quoted values |
 | operator level | branch-tree purity rates at $n = 100$ and $n = 1000$, zero collisions | $\ln(4/3)$ |
 | protocol | identifiability rank filling, sweet-spot cell values, noise-recovery table ($P_{\rm id}$, $\hat\theta$ error), implemented-classifier ceiling $\mathbb{E}[\mathrm{rank}\,\Gamma]/m + (1-\mathbb{E}[\mathrm{rank}\,\Gamma]/m)/m$ | quoted values |
 | figures | regenerates the three manuscript figures from data | file existence |
@@ -54,7 +57,7 @@ What the fast tier checks:
 ```
 qnoise_metametrology/   flat modules (run as scripts from this directory)
   prototype_phase_diagram.py   dense pipeline, n <= 8 (QELM budget control)
-  prototype_lean.py            matrix-free statevector pipeline, n <= 16
+  prototype_lean.py            matrix-free statevector pipeline, n <= 18
   branch_tree.py               symplectic Heisenberg branch tree, n <= 1000+
   verify_proofs.py             verification suite (Lemma 2 / Proposition 4)
   family_maximization.py       commuting-family classical Fisher + purity

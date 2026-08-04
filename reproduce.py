@@ -76,16 +76,18 @@ def main():
               mw["rate_maxw_full"], 0.182, 0.008)
         check("M=256 dragged rate", mw["M_sweep"]["256"], 0.1373, 0.01)
 
-    # ---- 2. alpha universality (10 fits, n=8-16, f>1/2) ----------------
+    # ---- 2. alpha universality (12 fits, n=8-18, f>1/2) ----------------
     quoted = {(8, 6): 0.148, (8, 5): 0.124, (10, 6): 0.158, (10, 8): 0.135,
               (12, 8): 0.146, (12, 9): 0.133, (14, 8): 0.172, (14, 10): 0.128,
-              (16, 10): 0.152, (16, 12): 0.128}
+              (16, 10): 0.149, (16, 12): 0.124,
+              (18, 10): 0.148, (18, 12): 0.141}
     alphas = []
     for fn, alist in [("results_oneshot_n8_x0.json", [5, 6]),
                       ("lean_oneshot_n10.json", [6, 8]),
                       ("lean_oneshot_n12.json", [8, 9]),
                       ("lean_oneshot_n14.json", [8, 10]),
-                      ("lean_oneshot_n16.json", [10, 12])]:
+                      ("lean_oneshot_n16.json", [10, 12]),
+                      ("lean_oneshot_n18.json", [10, 12])]:
         recs = json.load(open(DATA / fn))
         n = recs[0]["n"]
         for a in alist:
@@ -271,6 +273,32 @@ def main():
             dev = int(np.sum(np.abs(v - 1.0 / L) > 0.02))
             check(f"interleaved eta(0) deviations L={L} a={a}",
                   float(dev), float(dev_expected[(fn, a)]), 0.5)
+    # ---- 10b. Gram conditioning across sizes (SM-C table) --------------
+    # deep-phase concentration at the analytic mean 2g and window-edge
+    # penalty; medians over 8 circuits
+    gc = json.load(open(DATA / "gram_conditioning_n8_14.json"))
+
+    def gconst(n_, a_):
+        d, dA = 2.0 ** n_, 2.0 ** a_
+        return d * (dA ** 2 - 1) / (dA * (d ** 2 - 1))
+
+    def gcell(n_, a_, t_):
+        v = [r for r in gc if r["n"] == n_ and r["a"] == a_
+             and r["t"] == t_]
+        lmin = float(np.median([x["gram_lam_min"] for x in v]))
+        kap = float(np.median([x["gram_lam_max"] / x["gram_lam_min"]
+                               for x in v if x["gram_lam_min"] > 0]))
+        return lmin / (2 * gconst(n_, a_)), kap
+
+    for (n_, a_, t_, exp_ratio, exp_kap) in [
+            (8, 4, 32, 0.59, 2.59), (10, 5, 32, 0.76, 1.70),
+            (12, 6, 32, 0.86, 1.33), (14, 7, 32, 0.92, 1.18),
+            (14, 10, 32, 0.99, 1.02), (10, 5, 6, 0.14, 10.50)]:
+        ratio, kap = gcell(n_, a_, t_)
+        check(f"gram lam_min/2g n={n_} a={a_} t={t_}", ratio, exp_ratio,
+              0.01)
+        check(f"gram kappa n={n_} a={a_} t={t_}", kap, exp_kap, 0.02)
+
     # interleaved/one-shot floor ratios (manuscript: 441, 7.7, 17 at
     # f = 0.5, 0.6, 0.8 -- NOT "10-30x")
     af = json.load(open(DATA / "alpha_fits.json"))

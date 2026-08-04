@@ -194,6 +194,8 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--n", type=int, default=10)
     p.add_argument("--seeds", type=int, default=8)
+    p.add_argument("--seed-start", type=int, default=0,
+                   help="first seed (cells run seeds seed_start..seed_start+seeds-1)")
     p.add_argument("--mode", choices=["oneshot", "interleaved", "both"],
                    default="both")
     p.add_argument("--layers", type=int, default=4)
@@ -213,7 +215,9 @@ def main():
              else [args.mode])
     for mode in modes:
         records, t0 = [], time.time()
-        cells = list(iproduct(args.t, args.a, range(args.seeds)))
+        cells = list(iproduct(args.t, args.a,
+                              range(args.seed_start,
+                                    args.seed_start + args.seeds)))
         for i, (t, a, seed) in enumerate(cells):
             records.append(run_cell(args.n, t, a, seed, mode, args.layers,
                                     args.ident))

@@ -271,11 +271,126 @@ def _rank_rel(blocks, n, a):
     return float(np.sum(ev > max(lam_max, 1e-300) * 1e-8) / len(ev))
 
 
+def check3_visibility_orbits(n=5, a=2, samples=40000, seed=7):
+    """Proposition 5 ingredient: exact pair-orbit probabilities of the
+    final-Clifford visibility filter.
+
+    For uniform random Clifford C and fixed distinct non-identity Paulis
+    P, P', with v = 1[supp(C P C^dag) in A]:
+      E[v] = q = (4^a-1)/(4^n-1)
+      P[v=v'=1 | commuting]     = (4^a-1)(2^(2a-1)-2)/((4^n-1)(2^(2n-1)-2))
+      P[v=v'=1 | anticommuting] = (4^a-1)2^(2a-1)/((4^n-1)2^(2n-1))
+    (Witt transitivity of Sp(2n,2) on ordered pairs of distinct nonzero
+    vectors with fixed symplectic product.)  Also gates the covariance
+    bound |Cov|/q^2 <= 3/(4^a-1).
+    """
+    from qiskit.quantum_info import Pauli, random_clifford
+    print(f"check3: visibility-filter pair orbits n={n} a={a} "
+          f"({samples} Clifford samples)")
+    rng = np.random.default_rng(seed)
+    q = (4 ** a - 1) / (4 ** n - 1)
+    p_comm = ((4 ** a - 1) * (2 ** (2 * a - 1) - 2)) / \
+             ((4 ** n - 1) * (2 ** (2 * n - 1) - 2))
+    p_anti = ((4 ** a - 1) * 2 ** (2 * a - 1)) / \
+             ((4 ** n - 1) * 2 ** (2 * n - 1))
+    P1 = Pauli("X" + "I" * (n - 1))
+    P2c = Pauli("IX" + "I" * (n - 2))          # commutes with P1
+    P2a = Pauli("Z" + "I" * (n - 1))           # anticommutes with P1
+    assert P1.commutes(P2c) and not P1.commutes(P2a)
+
+    def in_A(p):
+        return not (p.z[a:].any() or p.x[a:].any())
+
+    hit1 = both_c = both_a = 0
+    for _ in range(samples):
+        C = random_clifford(n, seed=int(rng.integers(2 ** 31)))
+        v1 = in_A(P1.evolve(C))
+        hit1 += v1
+        if v1:
+            both_c += in_A(P2c.evolve(C))
+            both_a += in_A(P2a.evolve(C))
+
+    def near(obs, exact):
+        se = np.sqrt(exact * (1 - exact) / samples)
+        return abs(obs / samples - exact) < 5 * se + 1e-12
+
+    _gate("check3 E[v] matches q", near(hit1, q))
+    _gate("check3 P[both] commuting matches orbit count",
+          near(both_c, p_comm))
+    _gate("check3 P[both] anticommuting matches orbit count",
+          near(both_a, p_anti))
+    eps_c = p_comm / q ** 2 - 1
+    eps_a = p_anti / q ** 2 - 1
+    _gate("check3 |Cov|/q^2 <= 3/(4^a-1) (both orbits)",
+          max(abs(eps_c), abs(eps_a)) <= 3 / (4 ** a - 1) + 1e-12)
+
+
+def check4_isotropy_family(n=6, a=4, t_list=(0, 8), reals=(3000, 600),
+                           seed=999):
+    """Proposition 6 ingredient: second-moment isotropy of the response.
+
+    The final-Clifford two-copy twirl (same computation as Lemma 2) gives
+    E[s_P s_Q] = c_t delta_PQ over non-identity A-Paulis with c_t
+    t-independent, so ANY fixed set F captures mean share |F|/(4^a-1).
+    Gates: the fixed single-qubit-Z family share is near (2^a-1 terms
+    would be the maximal family; here |F|=a) a/(4^a-1) at both t, and the
+    total E[sum s^2] is flat in t (basis-invariant norm).
+    """
+    from qiskit.quantum_info import Statevector as SV
+    from prototype_phase_diagram import pauli_coeffs, reduced_density
+    from prototype_lean import synth_blocks, apply_block
+    print(f"check4: isotropy / fixed-family flatness n={n} a={a} "
+          f"reals={reals}")
+    m_pauli = 4 ** a
+    delta = 1e-4
+    idxZ = [3 * 4 ** k for k in range(a)]      # fixed commuting family
+
+    def s_vector(t, sd):
+        r = np.random.default_rng([sd, t, seed])
+        blocks = synth_blocks(n, t, max(t, 1), r)
+
+        def ev(vec):
+            for b in blocks:
+                vec = apply_block(vec, b, n, SV)
+            return vec
+
+        psi0 = np.zeros(2 ** n, complex)
+        psi0[0] = 1.0
+        w = np.zeros(2 ** n, complex)
+        w[1] = 1.0
+        up = ev(np.cos(delta) * psi0 - 1j * np.sin(delta) * w)
+        um = ev(np.cos(delta) * psi0 + 1j * np.sin(delta) * w)
+        fp = pauli_coeffs(reduced_density(up, n, a), a).reshape(-1).real
+        fm = pauli_coeffs(reduced_density(um, n, a), a).reshape(-1).real
+        return (fp - fm) * 2 ** a / (2 * delta)
+
+    pred = len(idxZ) / (m_pauli - 1)
+    totals = []
+    for t, R in zip(t_list, reals):
+        S2 = np.zeros(m_pauli)
+        for sd in range(R):
+            s = s_vector(t, sd)
+            S2 += s ** 2
+        S2 /= R
+        tot = S2[1:].sum()
+        share = S2[idxZ].sum() / tot
+        totals.append(tot)
+        print(f"    t={t}: fixed-family share={share:.4f} "
+              f"(isotropy prediction {pred:.4f}), total={tot:.3f}")
+        _gate(f"check4 fixed-family share flat at t={t} "
+              f"(within 25% of {pred:.4f})",
+              abs(share - pred) < 0.25 * pred)
+    _gate("check4 total sensitivity norm flat in t (within 5%)",
+          abs(totals[0] - totals[1]) < 0.05 * max(totals))
+
+
 if __name__ == "__main__":
     import sys
     check0_weingarten()
     check1_stabilizer()
     check2_rank_tolerance()
+    check3_visibility_orbits()
+    check4_isotropy_family()
     print(f"\nverify_proofs: {'PASSED' if not FAILURES else 'FAILED'} "
           f"({len(FAILURES)} gate failures)")
     for f in FAILURES:

@@ -309,6 +309,41 @@ def main():
         check(f"interleaved/one-shot floor ratio a={a}",
               inter[a] / ones[a], exp, exp * 0.01)
 
+    # ---- 10c. alpha robustness: bootstrap CI + fit-window (SM-C) -------
+    ar = json.load(open(DATA / "alpha_robustness.json"))
+    g = ar["grand_mean"]
+    check("bootstrap grand mean alpha", g["point"], 0.1422, 0.002)
+    check("bootstrap grand CI lo", g["ci_lo"], 0.130, 0.003)
+    check("bootstrap grand CI hi", g["ci_hi"], 0.148, 0.003)
+    wmeans = {w["t_max"]: w["mean_alpha"] for w in ar["windows_t_max"]}
+    for key, exp in [("16", 0.1224), ("24", 0.1320), ("32", 0.1378)]:
+        check(f"window t<={key} mean alpha", wmeans[key], exp, 0.002)
+
+    # ---- 10d. per-setting FI distribution vs needle proxy (SM-C) -------
+    sd = json.load(open(DATA / "setting_distribution_n10.json"))
+    check("setting-dist cross-check mismatches",
+          float(sd["cross_check_mismatches"]), 0, 0.5)
+    rows = {(r["a"], r["t"]): r for r in sd["summary"]}
+    ratios = [r["ach_over_needle"] for r in sd["summary"] if r["ach_over_needle"]]
+    check("max eta_ach/eta_needle over sweep", float(max(ratios)),
+          1.015, 0.02)
+    check("top-64 share a=8 t=32", rows[(8, 32)]["top64"], 0.015, 0.005)
+    check("m_eff a=8 t=32", rows[(8, 32)]["m_eff"] / 1e4, 2.05, 0.15)
+
+    # ---- 10e. resource frontier (SM-E table) ---------------------------
+    rf = {(r["K"], r["S"]): r for r in
+          json.load(open(DATA / "resource_frontier_n10_a5.json"))}
+    check("frontier P_id K=1023 S=4096", rf[(1023, 4096)]["p_identify"],
+          0.98, 0.02)
+    check("frontier P_id K=128 S=4096", rf[(128, 4096)]["p_identify"],
+          0.29, 0.02)
+    check("frontier P_id K=16 S=4096", rf[(16, 4096)]["p_identify"],
+          0.05, 0.02)
+    check("frontier calibration share", rf[(512, 4096)]["cal_share"],
+          0.9523, 0.001)
+    check("frontier B K=1023", float(rf[(1023, 4096)]["budget"]),
+          175992832, 1)
+
     # ---- 11. figures regenerate ----------------------------------------
     run([PY, PKG / "make_figures.py", "--data", DATA, "--out",
          ROOT / "figures"], cwd=ROOT)
@@ -327,6 +362,9 @@ def main():
              "--mode", "oneshot", "--ident", "--out", "lean2"])
         run([PY, "branch_tree.py", "--n", "100", "--tmax", "32",
              "--seeds", "24", "--out", "branchtree24"])
+        run([PY, "alpha_robustness.py"])
+        run([PY, "setting_distribution.py"])
+        run([PY, "resource_frontier.py"])
 
     print(f"\n=== reproduction {'PASSED' if not FAILURES else 'FAILED'} "
           f"({len(FAILURES)} failures) ===")

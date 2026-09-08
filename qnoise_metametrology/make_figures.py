@@ -13,6 +13,18 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+
+# Journal-legible defaults: figures are generated at their final printed
+# width (7.16 in, two-column) so fonts are NOT shrunk on inclusion; 8 pt
+# matches IEEE/APS caption text. Type-42 fonts keep the PDF text
+# selectable/accessible.
+plt.rcParams.update({
+    "font.size": 8, "axes.titlesize": 9, "axes.labelsize": 8,
+    "xtick.labelsize": 7.5, "ytick.labelsize": 7.5, "legend.fontsize": 7.5,
+    "pdf.fonttype": 42, "ps.fonttype": 42,
+})
+FIGSIZE = (7.16, 2.75)
+
 from scipy.optimize import curve_fit
 
 
@@ -53,12 +65,12 @@ def fig1(data, out):
     Ff, _ = grid("fqa")
     Fq, _ = grid("fq_full")
     E, Es = grid("eta_needle")
-    fig, axes = plt.subplots(1, 2, figsize=(11.5, 4.0))
+    fig, axes = plt.subplots(1, 2, figsize=FIGSIZE)
     panels = [
         (axes[0], Ff / np.clip(Fq, 1e-12, None),
          r"(a) information present:  $F_Q^A/F_Q$", False),
         (axes[1], np.log10(np.clip(E, 1e-12, None)),
-         r"(b) information extractable:  $\log_{10}\,\eta_{\rm needle}$",
+         r"(b) best-Pauli sensitivity proxy:  $\log_{10}\,\eta_{\rm needle}$",
          True)]
     for ax, Z, title, log in panels:
         im = ax.imshow(Z, origin="lower", aspect="auto", cmap="viridis",
@@ -67,22 +79,23 @@ def fig1(data, out):
         ax.set_yticks(range(len(a_list)), [f"{a / n:.2f}" for a in a_list])
         ax.set_xlabel("magic  $t$  (number of $T$ gates)")
         ax.set_ylabel("access fraction  $f=|A|/n$")
-        ax.set_title(title, fontsize=11)
+        ax.set_title(title)
         ax.axhline(0.5, color="crimson", lw=2, ls="--")
         plt.colorbar(im, ax=ax)
-    axes[0].text(0.3, 0.18, "no-cloning wall $f=1/2$ (one-shot)",
-                 color="crimson", fontsize=9)
+    axes[0].text(0.3, 0.18, "$f=1/2$ decoupling reference (one-shot)",
+                 color="crimson")
     fig.suptitle(f"One-shot encoding, $n={n}$, 8 circuit realizations per "
-                 f"cell (cell std $\\leq$ {Es.max():.2f})", fontsize=10)
+                 f"cell (cell std $\\leq$ {Es.max():.2f})")
     fig.tight_layout()
-    fig.savefig(out / "fig1_phase_diagram.png", dpi=180)
+    fig.savefig(out / "fig1_phase_diagram.pdf")
+    fig.savefig(out / "fig1_phase_diagram.png", dpi=300)
     plt.close(fig)
 
 
 def fig2(data, out):
     recs = json.load(open(data / "lean2_oneshot_n10.json"))
     ts = sorted({r["t"] for r in recs})
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4.2))
+    fig, axes = plt.subplots(1, 2, figsize=FIGSIZE)
     colors = {3: "tab:red", 5: "tab:blue", 8: "tab:purple"}
     for a in [3, 5, 8]:
         rank = [np.mean([r["gram_rank"] / r["gram_m"] for r in recs
@@ -104,16 +117,17 @@ def fig2(data, out):
         ax.set_xlabel("t (T gates)")
     axes[0].set_ylabel("rank$(\\Gamma)/m$")
     axes[0].set_title("(a) Identifiability fills with magic")
-    axes[0].legend(fontsize=9)
+    axes[0].legend()
     axes[1].set_yscale("log")
     axes[1].set_ylabel("$\\eta_{\\rm needle}$,  $F_Q^A/F_Q$")
-    axes[1].set_title("(b) Extraction drains; information persists "
+    axes[1].set_title("(b) Pauli proxy drains; information persists "
                       "($f\\geq 0.5$)")
-    axes[1].legend(fontsize=7, ncol=2)
+    axes[1].legend(ncol=2)
     fig.suptitle("n=10 one-shot, 16 circuit realizations per cell: "
-                 "sweet-spot window (shaded, f=0.5)", fontsize=10)
+                 "finite-size window (shaded, f=0.5)")
     fig.tight_layout()
-    fig.savefig(out / "fig2_sweetspot.png", dpi=180)
+    fig.savefig(out / "fig2_sweetspot.pdf")
+    fig.savefig(out / "fig2_sweetspot.png", dpi=300)
     plt.close(fig)
 
 
@@ -127,16 +141,16 @@ def fig3(data, out):
             al, er, _ = fit_eta([dict(r, eta_needle=r["eta_family"])
                                  for r in recs], a)
             fam[(n, a)] = (al, er)
-    fig, axes = plt.subplots(1, 2, figsize=(11.5, 4.2))
+    fig, axes = plt.subplots(1, 2, figsize=FIGSIZE)
     ax = axes[0]
     cmap = plt.get_cmap("tab10")
     ci = 0
     for r in fits:
         if r["mode"] != "oneshot" or r["f"] <= 0.55:
             continue
-        if abs(r["f"] - 0.75) > 0.08 and r["n"] not in (14, 16):
+        if abs(r["f"] - 0.75) > 0.08 and r["n"] not in (14, 16, 18):
             continue
-        if r["n"] == 16 and r["f"] < 0.7:
+        if r["n"] in (16, 18) and r["f"] < 0.65:
             continue
         color = cmap(ci % 10)
         ci += 1
@@ -152,8 +166,8 @@ def fig3(data, out):
     ax.set_xlabel("$t$ ($T$ gates)")
     ax.set_ylabel(r"$\eta_{\rm needle}(t)/\eta_{\rm needle}(0)$")
     ax.set_ylim(2e-4, 2)
-    ax.set_title("(a) collapse vs branching-bound rate, $n = 8$–$16$")
-    ax.legend(fontsize=7)
+    ax.set_title("(a) collapse vs branching-bound rate, $n = 8$–$18$")
+    ax.legend(loc="lower left")
     ax = axes[1]
     for (n, mode) in sorted({(r["n"], r["mode"]) for r in fits}):
         if mode != "oneshot":
@@ -170,15 +184,16 @@ def fig3(data, out):
                     mfc="none", color="gray",
                     label="family" if (n, a) == (10, 6) else None)
     ax.axhline(np.log(4 / 3) / 2, color="k", lw=1.5, ls="--")
-    ax.text(0.56, 0.148, r"$\ln(4/3)/2 = 0.144$", fontsize=9)
+    ax.text(0.56, 0.148, r"$\ln(4/3)/2 = 0.144$")
     ax.axhline(np.log(4 / 3) / 4, color="gray", lw=1, ls=":")
     ax.set_xlabel("$f = |A|/n$")
     ax.set_ylabel(r"$\alpha$ (per $T$ gate)")
     ax.set_title(r"(b) fitted $\alpha$: needle vs commuting family")
     ax.set_ylim(0, 0.25)
-    ax.legend(fontsize=7)
+    ax.legend(loc="lower left", ncol=2)
     fig.tight_layout()
-    fig.savefig(out / "fig3_alpha.png", dpi=180)
+    fig.savefig(out / "fig3_alpha.pdf")
+    fig.savefig(out / "fig3_alpha.png", dpi=300)
     plt.close(fig)
 
 

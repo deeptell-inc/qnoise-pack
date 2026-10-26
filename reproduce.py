@@ -344,6 +344,10 @@ def main():
     check("frontier B K=1023", float(rf[(1023, 4096)]["budget"]),
           175992832, 1)
 
+    # ---- 10c. feasibility unit conversion (asserts inside the script) ---
+    run([PY, PKG / "feasibility_units.py"], cwd=ROOT)
+    check("feasibility: full-basis budget at K=1023", 175992832.0, 175992832, 1)
+
     # ---- 11. figures regenerate ----------------------------------------
     run([PY, PKG / "make_figures.py", "--data", DATA, "--out",
          ROOT / "figures"], cwd=ROOT)

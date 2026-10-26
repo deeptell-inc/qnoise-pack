@@ -7,7 +7,7 @@ Code, data, and one-command reproduction for:
 > Hikaru Wakaura and Taiki Tanimae (QIRI, Tokyo, 2026)
 > arXiv: *to be added upon posting*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21532189.svg)](https://doi.org/10.5281/zenodo.21532189)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21532188.svg)](https://doi.org/10.5281/zenodo.21532188)
 Repository: https://github.com/deeptell-inc/qnoise-pack — archived on Zenodo (concept doi:10.5281/zenodo.21532188, resolving to the latest version).
 
 ## TL;DR of the paper

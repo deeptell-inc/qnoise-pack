@@ -13,7 +13,7 @@ version: 1.2.0
 date-released: 2026-10-26
 license: MIT
 repository-code: "https://github.com/deeptell-inc/qnoise-pack"
-doi: 10.5281/zenodo.21532189
+doi: 10.5281/zenodo.21532188
 preferred-citation:
   type: article
   title: "Identifiability and Pauli-setting concentration of metrological signals under doped-Clifford scrambling"

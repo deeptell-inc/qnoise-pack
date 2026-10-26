@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qnoise-pack"
-version = "1.0.0"
+version = "1.2.0"
 description = "Meta-metrology of scrambled signals: learnability phase diagram in (magic, access) — code and data for 'Magic, not scrambling, decides what you can learn'"
 authors = [
   { name = "Hikaru Wakaura", email = "h.wakaura@qiri.co.jp" },

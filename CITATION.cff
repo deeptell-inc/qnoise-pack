@@ -10,7 +10,7 @@ authors:
     given-names: Taiki
     affiliation: "QIRI (Quantum Integrated Research Institute Inc.), Tokyo, Japan"
 version: 1.0.0
-date-released: 2026-07-24
+date-released: 2026-10-26
 license: MIT
 repository-code: "https://github.com/deeptell-inc/qnoise-pack"
 doi: 10.5281/zenodo.21532189

@@ -348,6 +348,46 @@ def main():
     run([PY, PKG / "feasibility_units.py"], cwd=ROOT)
     check("feasibility: full-basis budget at K=1023", 175992832.0, 175992832, 1)
 
+    # ---- 10d. scrambler families (decoding-limits map, column C) --------
+    run([PY, PKG / "scrambler_zoo.py", "--selftest"], cwd=PKG)
+    zb = json.load(open(DATA / "zoo_brickwork_n10.json"))
+    zu = json.load(open(DATA / "zoo_u1_n10.json"))
+    zm = json.load(open(DATA / "zoo_matchgate_n10.json"))
+
+    def zmean(recs, key, **sel):
+        v = [r[key] for r in recs if all(r[k] == x for k, x in sel.items())]
+        return float(np.mean(v))
+
+    # light cone: information reaches the far block at depth n - a
+    for a_ in (6, 8):
+        before = zmean(zb, "fqa", gate="haar", a=a_, place="far", depth=10 - a_ - 1)
+        after = zmean(zb, "fqa", gate="haar", a=a_, place="far", depth=10 - a_)
+        check(f"zoo light cone a={a_}: F_Q^A before arrival", before, 0.0, 1e-9)
+        check(f"zoo light cone a={a_}: F_Q^A/F_Q at arrival",
+              after / 4, {6: 0.0711, 8: 0.2812}[a_], 0.02)
+    # Clifford brickwork: every realization is all-or-nothing
+    cl = [r["eta_needle"] for r in zb if r["gate"] == "clifford"]
+    check("zoo Clifford brickwork eta in {0,1} fraction",
+          float(np.mean([min(abs(e), abs(e - 1)) < 1e-6 for e in cl])), 1.0, 1e-9)
+    check("zoo Haar brickwork eta D=32 a=6",
+          zmean(zb, "eta_needle", gate="haar", a=6, place="near", depth=32),
+          0.0088, 0.002)
+    # U(1): plateau of the best-setting fraction is about twice the generic one
+    pu = np.mean([zmean(zu, "eta_needle", gate="u1", a=6, place="near", depth=d) for d in (64, 96, 128)])
+    pg = np.mean([zmean(zu, "eta_needle", gate="haar", a=6, place="near", depth=d) for d in (64, 96, 128)])
+    check("zoo U(1)/generic eta plateau ratio a=6", float(pu / pg), 1.92, 0.1)
+    check("zoo U(1) F_Q^A/F_Q plateau a=6",
+          zmean(zu, "fqa", gate="u1", a=6, place="near", depth=128) / 4, 0.861, 0.02)
+    # free-fermion point: Gram rank is exactly 2a in every realization
+    for a_ in (5, 6, 8):
+        ranks = {r["gram_rank"] for r in zm if r["a"] == a_ and r["k"] == 0}
+        check(f"zoo matchgate Gaussian rank a={a_} (= 2a)",
+              float(max(ranks) + min(ranks)) / 2, 2.0 * a_, 1e-9)
+    check("zoo matchgate Gaussian eta a=6", zmean(zm, "eta_needle", a=6, k=0), 0.380, 0.01)
+    check("zoo matchgate eta k=32 a=6", zmean(zm, "eta_needle", a=6, k=32), 0.0138, 0.002)
+    check("zoo matchgate rank/m k=3 a=5",
+          zmean(zm, "gram_rank", a=5, k=3) / 20, 1.0, 1e-9)
+
     # ---- 11. figures regenerate ----------------------------------------
     run([PY, PKG / "make_figures.py", "--data", DATA, "--out",
          ROOT / "figures"], cwd=ROOT)

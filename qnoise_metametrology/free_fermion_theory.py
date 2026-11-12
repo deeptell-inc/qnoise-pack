@@ -76,7 +76,9 @@ def pauli_degree(n):
 
 
 def gaussian_unitary(O, g):
-    """U with U gamma_mu U^dag = sum_nu O[nu, mu] gamma_nu, O in SO(2n)."""
+    """U with U gamma_mu U^dag = sum_nu O[mu, nu] gamma_nu, O in SO(2n).
+    (Transpose of the manuscript's index convention; immaterial for the
+    Haar-averaged degree chain, since the Haar measure is transpose-invariant.)"""
     A = np.real(logm(O))
     A = (A - A.T) / 2
     H = sum(A[m, k] * g[m] @ g[k] for m in range(len(g)) for k in range(len(g)))

@@ -410,6 +410,29 @@ def main():
     check("zoo n=12 Clifford brickwork eta in {0,1} fraction",
           float(np.mean([min(abs(e), abs(e - 1)) < 1e-6 for e in cl12])), 1.0, 1e-9)
 
+    # ---- 10f. free-fermion theory (Proposition 7, degree chain) ---------
+    run([PY, PKG / "free_fermion_theory.py"], cwd=PKG)
+    for n_, alist in ((8, (4, 5, 6)), (14, (7, 8))):
+        zmg = json.load(open(DATA / f"zoo_matchgate_n{n_}.json"))
+        for a_ in alist:
+            ranks = {r["gram_rank"] for r in zmg if r["a"] == a_ and r["k"] == 0}
+            check(f"zoo n={n_} matchgate Gaussian rank a={a_} (= 2a)",
+                  float(max(ranks) + min(ranks)) / 2, 2.0 * a_, 1e-9)
+    # floor-subtracted decay rate per CZ over k <= 8 at f = 1/2 follows the
+    # degree-chain benchmark -ln(1 - 2/n): the per-gate rate falls with n
+    def early_rate(n_, a_):
+        zmg = json.load(open(DATA / f"zoo_matchgate_n{n_}.json"))
+        ks = sorted({r["k"] for r in zmg})
+        e = np.array([np.mean([r["eta_needle"] for r in zmg if r["a"] == a_ and r["k"] == k]) for k in ks])
+        floor = e[-2:].mean()
+        sel = [i for i, k in enumerate(ks) if k <= 8]
+        return float(-np.polyfit(np.array(ks)[sel], np.log(e[sel] - floor), 1)[0])
+    for n_, exp in ((8, 0.299), (10, 0.218), (12, 0.190), (14, 0.142)):
+        r_ = early_rate(n_, n_ // 2)
+        check(f"zoo matchgate early rate/CZ n={n_} f=0.5", r_, exp, 0.005)
+        check(f"zoo matchgate rate vs benchmark -ln(1-2/n) n={n_}",
+              r_ / float(-np.log(1 - 2 / n_)), 1.0, 0.12)
+
     # ---- 11. figures regenerate ----------------------------------------
     run([PY, PKG / "make_figures.py", "--data", DATA, "--out",
          ROOT / "figures"], cwd=ROOT)

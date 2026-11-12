@@ -3,7 +3,7 @@
 Code, data, and one-command reproduction for:
 
 > **Identifiability and Pauli-setting concentration of metrological signals
-> under doped-Clifford scrambling**
+> across scrambler families**
 > Hikaru Wakaura and Taiki Tanimae (QIRI, Tokyo, 2026)
 > arXiv: *to be added upon posting*
 
@@ -50,6 +50,7 @@ What the fast tier checks:
 | fits | 12 needle exponents $\alpha$ ($n=8$–$18$), 4 family exponents, 4 purity rates, 3 doping ensembles (T / 4-parallel-T / CCZ), interleaved per-cell $\eta(0)$ deviations and floor ratios, Gram conditioning $\lambda_{\min}/2g$ and $\kappa$ ($n=8$–$14$) | quoted values |
 | operator level | branch-tree purity rates at $n = 100$ and $n = 1000$, zero collisions | $\ln(4/3)$ |
 | protocol | identifiability rank filling, sweet-spot cell values, noise-recovery table ($P_{\rm id}$, $\hat\theta$ error), implemented-classifier ceiling $\mathbb{E}[\mathrm{rank}\,\Gamma]/m + (1-\mathbb{E}[\mathrm{rank}\,\Gamma]/m)/m$ | quoted values |
+| scrambler families | brickwork (Haar / Clifford), U(1)-symmetric, and free-fermion + CZ circuits at $n=8$–$14$: light-cone arrival depth, selection rules, Gram rank $=2a$ at the free-fermion point (Proposition 7), decay rates against $-\ln(1-2/n)$; proof-step checks in `free_fermion_theory.py` | quoted values |
 | figures | regenerates the three manuscript figures from data | file existence |
 
 ## Layout

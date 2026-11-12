@@ -84,23 +84,32 @@ def main(n):
           title="(e) best setting vs CZ count")
     p.legend(loc="upper right")
 
-    # (f) decay rates with bootstrap intervals
+    # (f) per-gate decay rate versus system size
     p = ax[1, 2]
-    rows = [("doped Clifford\n(per $T$ gate)", 0.142, (0.130, 0.148), "k")]
-    for a in a_list[1:]:
-        d = S["matchgate"][str(a)]["eta_rate_per_cz"]
-        rows.append((f"matchgate, $f$={a/n:.1f}\n(per CZ)", d["rate"], d["ci"], "tab:green"))
-    for a in a_list[1:]:
-        d = S["brickwork"][str(a)]["eta_rate_per_layer"]
-        rows.append((f"Haar brickwork, $f$={a/n:.1f}\n(per layer)", d["rate"], d["ci"], "tab:blue"))
-    d = S["u1"][str(a_mid)]["eta_rate_u1"]
-    rows.append((f"U(1) brickwork, $f$={a_mid/n:.1f}\n(per layer)", d["rate"], d["ci"], "tab:orange"))
-    for i, (lab, r, ci, c) in enumerate(rows):
-        p.errorbar(r, -i, xerr=[[r - ci[0]], [ci[1] - r]], fmt="o", ms=3.5, color=c, capsize=2)
-    p.set_yticks([-i for i in range(len(rows))])
-    p.set_yticklabels([r[0] for r in rows], fontsize=6.5)
-    p.axvline(np.log(4 / 3) / 2, color="k", lw=0.6, ls="--")
-    p.set(xlabel="decay rate of $\\eta_{\\rm needle}$", title="(f) decay rates, 95% CI")
+    def early(nn, aa):
+        Z = json.load(open(DATA / f"zoo_matchgate_n{nn}.json"))
+        ks = sorted({r["k"] for r in Z})
+        e = np.array([np.mean([r["eta_needle"] for r in Z if r["a"] == aa and r["k"] == k]) for k in ks])
+        sel = [i for i, k in enumerate(ks) if k <= 8]
+        return -np.polyfit(np.array(ks)[sel], np.log(e[sel] - e[-2:].mean()), 1)[0]
+    sizes = [nn for nn in (8, 10, 12, 14) if (DATA / f"zoo_matchgate_n{nn}.json").exists()]
+    for nn in sizes:
+        Z = json.load(open(DATA / f"zoo_matchgate_n{nn}.json"))
+        for aa in sorted({r["a"] for r in Z}):
+            half = aa == nn // 2
+            p.plot(nn, early(nn, aa), "o", ms=4 if half else 3, color="tab:green",
+                   mfc="tab:green" if half else "none",
+                   label={True: "free fermion, $f$=1/2", False: "free fermion, $f$>1/2"}[half] if nn == sizes[0] and aa in (nn // 2, nn // 2 + 1) else None)
+    xx = np.linspace(7.5, 18.5, 100)
+    p.plot(xx, -np.log(1 - 2 / xx), "-", color="tab:green", lw=0.8, label=r"$-\ln(1-2/n)$")
+    af = json.load(open(DATA / "alpha_fits.json"))
+    one = [r for r in af if r["mode"] == "oneshot" and r["f"] > 0.5]
+    p.plot([r["n"] for r in one], [r["alpha"] for r in one], "s", ms=3, color="k", mfc="none",
+           label="doped Clifford (per $T$)")
+    p.axhline(np.log(4 / 3) / 2, color="k", lw=0.8, ls="--", label=r"$\ln(4/3)/2$")
+    p.set(xlabel="system size $n$", ylabel="decay rate per gate", title="(f) per-gate rate vs size",
+          xlim=(7.3, 18.7), ylim=(0.08, 0.42))
+    p.legend(loc="upper right", fontsize=6)
 
     fig.tight_layout(pad=0.4, w_pad=0.8, h_pad=0.9)
     OUT.mkdir(exist_ok=True)

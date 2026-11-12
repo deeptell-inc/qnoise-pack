@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite the accompanying paper."
-title: "qnoise-pack: code, data, and reproduction driver for 'Identifiability and Pauli-setting concentration of metrological signals under doped-Clifford scrambling'"
+title: "qnoise-pack: code, data, and reproduction driver for 'Identifiability and Pauli-setting concentration of metrological signals across scrambler families'"
 authors:
   - family-names: Wakaura
     given-names: Hikaru
@@ -9,14 +9,14 @@ authors:
   - family-names: Tanimae
     given-names: Taiki
     affiliation: "QIRI (Quantum Integrated Research Institute Inc.), Tokyo, Japan"
-version: 1.2.0
-date-released: 2026-10-26
+version: 1.3.0
+date-released: 2026-11-12
 license: MIT
 repository-code: "https://github.com/deeptell-inc/qnoise-pack"
 doi: 10.5281/zenodo.21532188
 preferred-citation:
   type: article
-  title: "Identifiability and Pauli-setting concentration of metrological signals under doped-Clifford scrambling"
+  title: "Identifiability and Pauli-setting concentration of metrological signals across scrambler families"
   authors:
     - family-names: Wakaura
       given-names: Hikaru

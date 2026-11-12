@@ -388,6 +388,28 @@ def main():
     check("zoo matchgate rank/m k=3 a=5",
           zmean(zm, "gram_rank", a=5, k=3) / 20, 1.0, 1e-9)
 
+    # ---- 10e. scrambler families at n = 12 (size check) ----------------
+    zb12 = json.load(open(DATA / "zoo_brickwork_n12.json"))
+    zm12 = json.load(open(DATA / "zoo_matchgate_n12.json"))
+    zh12 = json.load(open(DATA / "zoo_haar_n12.json"))
+    for a_ in (6, 7, 10):
+        ranks = {r["gram_rank"] for r in zm12 if r["a"] == a_ and r["k"] == 0}
+        check(f"zoo n=12 matchgate Gaussian rank a={a_} (= 2a)",
+              float(max(ranks) + min(ranks)) / 2, 2.0 * a_, 1e-9)
+        far = lambda d: float(np.mean([r["fqa"] for r in zb12 if r["gate"] == "haar"
+                                       and r["a"] == a_ and r["place"] == "far" and r["depth"] == d]))
+        check(f"zoo n=12 light cone a={a_}: F_Q^A one layer before arrival",
+              far(12 - a_ - 1), 0.0, 1e-9)
+        check(f"zoo n=12 light cone a={a_}: information present at D=n-a",
+              float(far(12 - a_) > 1e-3), 1.0, 1e-9)
+    check("zoo n=12 matchgate Gaussian eta a=7",
+          float(np.mean([r["eta_needle"] for r in zm12 if r["a"] == 7 and r["k"] == 0])), 0.338, 0.01)
+    check("zoo n=12 global-Haar eta a=7",
+          float(np.mean([r["eta_needle"] for r in zh12 if r["a"] == 7])), 0.0024, 0.0005)
+    cl12 = [r["eta_needle"] for r in zb12 if r["gate"] == "clifford"]
+    check("zoo n=12 Clifford brickwork eta in {0,1} fraction",
+          float(np.mean([min(abs(e), abs(e - 1)) < 1e-6 for e in cl12])), 1.0, 1e-9)
+
     # ---- 11. figures regenerate ----------------------------------------
     run([PY, PKG / "make_figures.py", "--data", DATA, "--out",
          ROOT / "figures"], cwd=ROOT)
